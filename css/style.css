@@ -1,0 +1,212 @@
+/* the asterisk means it applies to all properties
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body {
+background-color:lightgrey;
+color: #555555;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: bold;
+line-height: 1.6em;
+margin: 0px;
+}
+
+a{
+    text-decoration: none; /*takes the inderline in links away*/
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color: yellow;
+}
+
+a:visited{
+    color: tomato;
+}
+
+.clr{
+    clear: both;
+}
+.container{
+    width: 80%px;
+    margin: 2%;
+}
+
+.box1{
+    background-color: #333333;
+    color: white;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* same as abobe */
+    border: 5px red solid;
+    border-bottom-width: 3px;
+    border-top-style: dotted;
+
+    padding: 20px;
+
+    margin-top: 20px;
+    margin: 20px 0;
+
+}
+
+.box1 h1{
+    font-family: tohoma;
+    font-weight: 800px;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box2{
+    border: dotted;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 1px lime solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0px;
+    padding-left: 30px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom:dotted 3px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 20px;
+}
+
+.my-form label {
+    display: block; /* makes inline text horizontal */
+}
+
+.my-form input[type='text'], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: transparent;
+}
+
+.button:hover{
+    background:green;
+}
+
+.block{
+    width: 31%;
+    float: left;
+    padding: 1px;
+    margin: 0.3%;
+    border: 0 solid #555;
+    display: inline-block;
+    background-color: wheat;
+    box-sizing: border-box; /* this has effect when padding and border already in use. adding margin spoils it*/
+   
+}
+
+.blockscontainer{
+    margin: 2rem;
+}
+
+.bars{
+    margin-top: 50px;
+}
+
+.main-bar{
+    float: left;
+    width: 70%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.side-bar{
+    float: right;
+    width: 30%;
+    background-color: yellowgreen;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('../images/images-4.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+   
+}
+
+.p-box h3{
+    position: absolute;
+    top:30px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+}
+.fix-me{
+    padding: 0;
+   font-size: smaller;
+    position: fixed;
+    bottom: 500px;
+    right: 4px;
+}
+
+.my-list :first-child{
+    background: red;
+}
+
+.my-list :last-child{
+    background: blue;
+}
+
+.my-list :nth-child(even){
+    background: cyan;
+}
+
+.my-list li{
+    list-style: none;
+}
+
+.footer{
+    margin-top: 25%;
+}
